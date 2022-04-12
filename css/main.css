@@ -94,6 +94,10 @@ header .main-nav ul li a {
   text-decoration: none;
 }
 
+header .main-nav ul li a:hover {
+  text-decoration: underline;
+}
+
 .hidden-nav {
   margin-left: -100%;
   opacity: 0;
@@ -293,14 +297,11 @@ header .main-nav ul li a {
 .speakers-cards-container {
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
   margin-top: 1em;
   gap: 1.5em;
-
-  transition-property: height;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-in;
 }
 
 .speakers-hidden li:nth-child(n+3){
@@ -326,6 +327,15 @@ header .main-nav ul li a {
 .speaker-card .card-info h3 {
   font-size: 0.9em;
   font-weight: 600;
+}
+
+.speaker-card .card-info h3 a {
+  color: #272a32;
+  text-decoration: none;
+}
+
+.speaker-card .card-info h3 a:hover {
+  text-decoration: underline;
 }
 
 .speaker-card .card-info h4 {
@@ -409,7 +419,7 @@ footer .max-width-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  gap: 3em;
 }
 
 footer .max-width-container img {
@@ -622,5 +632,25 @@ footer .max-width-container p {
 
   .featured-section .max-width-container .speakers-hidden li:nth-child(n){
     display: flex;
+  }
+  
+  .partner-container {
+    gap: 5em;
+  }
+  
+  footer .max-width-container img {
+    width: 6em;
+  }
+  
+  footer .max-width-container h5 {
+    font-size: 0.8em;
+  }
+  
+  footer .max-width-container p {
+    display: block;
+    margin-top: 1em;
+    font-size: 0.8em;
+    max-width: 60em;
+    color: #575757;
   }
 }
