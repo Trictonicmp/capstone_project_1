@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <header class="hidden-nav">
-    <a href="#" class="close-button"><img src="images/static/icons/close_mobile_menu.png" alt="close"></a>
+  <header id="header-nav" class="hidden-nav">
+    <a href="#" class="close-button" id="close-nav-btn"><img src="images/static/icons/close_mobile_menu.png" alt="close"></a>
     <div class="social-media">
       <div class="max-width-container">
         <ul>
@@ -29,20 +29,19 @@
       </a>
       <nav>
         <ul>
-          <li><a href="#" class="active">About</a></li>
-          <li><a href="#">Program</a></li>
-          <li><a href="#">Join</a></li>
-          <li><a href="#">Sponsor</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#" class="decorative-button">CC Campaing</a></li>
+          <li><a href="#" class="active" onclick="toggleNav()">About</a></li>
+          <li><a href="#" onclick="toggleNav()">Program</a></li>
+          <li><a href="#" onclick="toggleNav()">Join</a></li>
+          <li><a href="#" onclick="toggleNav()">Sponsor</a></li>
+          <li><a href="#" class="decorative-button" onclick="toggleNav()">CC Campaing</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <a href="#" title="Open menu" class="mobile-menu-button">
+  <a href="#" title="Open menu" class="mobile-menu-button" id="mobile-btn">
     <img src="images/static/icons/mobile_menu.png" alt="menu">
   </a>
-  <section class="hero-section">
+  <section class="hero-section" id="About-section">
     <div class="max-width-container">
       <h1 class="hero-title">
         Now Available
@@ -55,7 +54,7 @@
       <p class="hero-location">@ National Museum of Korea, Art Center Nabi and more</p>
     </div>
   </section>
-  <section class="program-section">
+  <section class="program-section" id="Program-section">
     <div class="max-width-container">
       <h2 class="section-title">Main Program</h2>
       <span class="title-line"></span>
@@ -87,13 +86,14 @@
         </li>
       </ul>
       <a class="main-button" href="#" title="Join CC Global Summit 2015">Join CC Global Summit 2015</a>
+      <a class="whole-program-button" href="#" title="See the whole program">See the whole program</a>
     </div>
   </section>
-  <section class="featured-section">
+  <section class="featured-section" id="Featured-section">
     <div class="max-width-container">
       <h2 class="section-title">Featured Speakers</h2>
       <span class="title-line"></span>
-      <ul class="speakers-cards-container">
+      <ul class="speakers-cards-container speakers-hidden">
         <li class="speaker-card">
           <img src="images/static/speaker_01.png" alt="speaker 1">
           <div class="card-info">
@@ -101,6 +101,15 @@
             <h4>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h4>
             <span class="card-title-line"></span>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam porro vitae laborum libero voluptas, aut exercitationem eum animi </p>
+          </div>
+        </li>
+        <li class="speaker-card">
+          <img src="images/static/speaker_02.png" alt="speaker 1">
+          <div class="card-info">
+            <h3>SohTeong Noh</h3>
+            <h4>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h4>
+            <span class="card-title-line"></span>
+            <p> adipisicing elit. Magnam porro vitae laborum libero voluptas, aut exercitationem eum animi </p>
           </div>
         </li>
         <li class="speaker-card">
@@ -112,11 +121,38 @@
             <p> adipisicing elit. Magnam porro vitae laborum libero voluptas, aut exercitationem eum animi </p>
           </div>
         </li>
+        <li class="speaker-card">
+          <img src="images/static/speaker_04.png" alt="speaker 1">
+          <div class="card-info">
+            <h3>SohTeong Noh</h3>
+            <h4>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h4>
+            <span class="card-title-line"></span>
+            <p> adipisicing elit. Magnam porro vitae laborum libero voluptas, aut exercitationem eum animi </p>
+          </div>
+        </li>
+        <li class="speaker-card">
+          <img src="images/static/speaker_05.png" alt="speaker 1">
+          <div class="card-info">
+            <h3>SohTeong Noh</h3>
+            <h4>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h4>
+            <span class="card-title-line"></span>
+            <p> adipisicing elit. Magnam porro vitae laborum libero voluptas, aut exercitationem eum animi </p>
+          </div>
+        </li>
+        <li class="speaker-card">
+          <img src="images/static/speaker_06.png" alt="speaker 1">
+          <div class="card-info">
+            <h3>SohTeong Noh</h3>
+            <h4>Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h4>
+            <span class="card-title-line"></span>
+            <p> adipisicing elit. Magnam porro vitae laborum libero voluptas, aut exercitationem eum animi </p>
+          </div>
+        </li>
       </ul>
-      <a class="see-more-button" href="#">MORE <img src="images/static/icons/more_icon.png"></a>
+      <button class="see-more-button" id="see-more-speakers" type="button">MORE <img src="images/static/icons/more_icon.png"></button>
     </div>
   </section>
-  <section class="partners-section">
+  <section class="partners-section" id="Partners-section">
     <div class="max-width-container">
       <h3 class="section-title">Partner</h3>
       <span class="title-line"></span>
@@ -137,4 +173,6 @@
   </footer>
 </body>
 <script src="js/main.js" type="module"></script>
+<script src="js/mobile_nav.js"></script>
+<script src="js/show_speakers.js"></script>
 </html>
