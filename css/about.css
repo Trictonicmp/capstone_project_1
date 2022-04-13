@@ -170,7 +170,6 @@
 .past-card-details {
   position: absolute;
   z-index: 1;
-  width: 100%;
   text-decoration: none;
   color: white;
 }
