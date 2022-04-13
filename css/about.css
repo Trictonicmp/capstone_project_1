@@ -89,7 +89,6 @@
   line-height: 1.5em;
   color: #575757;
   transform: scale(1);
-
   transition-property: background-color;
   transition-duration: 1s;
   transition-timing-function: ease-in;
@@ -104,11 +103,26 @@
   font-weight: 400;
 }
 
+.past-card img {
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  opacity: 0.8;
+  mix-blend-mode: multiply;
+}
+
+.past-card:hover img {
+  filter: grayscale();
+  opacity: 1;
+  mix-blend-mode: normal;
+}
+
 .logo-section .max-width-container .logo-container img {
   width: 80%;
   transition-property: transform;
   transition-duration: 1s;
-  transition-timing-function: cubic-bezier(1,-0.23,.65,1.2);
+  transition-timing-function: cubic-bezier(1, -0.23, 0.65, 1.2);
   max-width: 30em;
 }
 
@@ -153,21 +167,6 @@
   background-color: #ec5242;
 }
 
-.past-card img {
-  position: relative;
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-  opacity: 0.8;
-  mix-blend-mode: multiply;
-}
-
-.past-card:hover img {
-  filter: grayscale();
-  opacity: 1;
-  mix-blend-mode: normal;
-}
-
 .past-card-details {
   position: absolute;
   z-index: 1;
@@ -190,15 +189,15 @@
     background-image: url(../images/static/main_big.png);
     background-size: cover;
   }
-  
+
   .hero-section-about .hero-title {
     font-size: 2em;
   }
-  
+
   .hero-section-about .hero-title span {
     font-size: 2em;
   }
-  
+
   .hero-section-about .hero-description {
     max-width: 38em;
     margin-top: 1em;
