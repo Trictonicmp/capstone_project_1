@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
   <header id="header-nav" class="hidden-nav">
@@ -30,7 +31,7 @@
       <nav>
         <ul id="nav-list">
           <li><a href="#" class="About active" onclick="toggleNav()">About</a></li>
-          <li><a class="Program-section" href="#Program-section" onclick="toggleNav()">Program</a></li>
+          <li><a class="Program-section" href="index.html#Program-section" onclick="toggleNav()">Program</a></li>
           <li><a class="Featured-section" href="#Featured-section" onclick="toggleNav()">Speakers</a></li>
           <li><a class="Program-section3" href="#Partners-section" onclick="toggleNav()">Sponsor</a></li>
           <li><a class="Program-section4" href="#" class="decorative-button" onclick="toggleNav()">CC Campaing</a></li>
@@ -41,61 +42,54 @@
   <div href="#" title="Open menu" class="mobile-menu-button" id="mobile-btn">
     <img src="images/static/icons/mobile_menu.png" alt="menu">
   </div>
-  <section class="hero-section" id="About-section">
+  <section class="hero-section-about" id="About-section">
     <div class="max-width-container">
       <h1 class="hero-title">
         Now Available
         <span>Cinema 4D Advanced Production Techniques</span>
       </h1>
+      <span class="title-line"></span>
       <p class="hero-description">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores aperiam quis officiis corporis pariatur, magni, voluptatem deleniti iste modi quos magnam 
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non, unde ratione dignissimos placeat hic fuga at commodi veniam laborum error. Praesentium at hic excepturi reiciendis libero. Ducimus necessitatibus labore omnis.
       </p>
-      <h2 class="hero-date">2015.10.15(THU) ~ 1(FRI)</h2>
-      <p class="hero-location">@ National Museum of Korea, Art Center Nabi and more</p>
+      <p class="hero-contact">
+        Please contact us per Email for any further questions about 
+        <span>CC Global Summit 2015!</span>
+        <span>ccsummit2015@cckorea.org</span>
+      </p>
     </div>
   </section>
-  <section class="program-section" id="Program-section">
+  <section class="logo-section">
     <div class="max-width-container">
-      <h2 class="section-title">Main Program</h2>
+      <h2 class="section-title">Creative Commons<br>Global Summit 2015 Logo</h2>
       <span class="title-line"></span>
-      <ul class="program-cards-container">
-        <li class="program-card">
-          <img src="images/static/icons/program_icon_01.png" alt="Lecture">
-          <h3>Lecture</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptate, magnam labore sint atque</p>
-        </li>
-        <li class="program-card">
-          <img src="images/static/icons/program_icon_02.png" alt="Lecture">
-          <h3>CC Exhibition</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptate, magnam labore sint atque</p>
-        </li>
-        <li class="program-card">
-          <img src="images/static/icons/program_icon_03.png" alt="Lecture">
-          <h3>Forum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptate, magnam labore sint atque</p>
-        </li>
-        <li class="program-card">
-          <img src="images/static/icons/program_icon_04.png" alt="Lecture">
-          <h3>Workshop</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptate, magnam labore sint atque</p>
-        </li>
-        <li class="program-card">
-          <img src="images/static/icons/program_icon_05.png" alt="Lecture">
-          <h3>CC Igninite</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptate, magnam labore sint atque</p>
-        </li>
-      </ul>
-      <a class="main-button" href="#" title="Join CC Global Summit 2015">Join CC Global Summit 2015</a>
-      <a class="whole-program-button" href="#" title="See the whole program">See the whole program</a>
+      <p class="section-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In iure nisi, saepe corrupti esse quaerat cumque unde laboriosam fuga accusamus. Quos quasi atque vitae reprehenderit nam, natus omnis culpa incidunt!</p>
+      <div class="logo-container">
+        <img src="images/static/logo.png">
+      </div>
     </div>
   </section>
-  <section class="featured-section" id="Featured-section">
+  <section class="past-section">
     <div class="max-width-container">
-      <h2 class="section-title">Featured Speakers</h2>
+      <h2 class="section-title"></h2>See the past C4DAPT events</h2>
       <span class="title-line"></span>
-      <ul class="speakers-cards-container speakers-hidden" id="speakers-container">
-      </ul>
-      <button class="see-more-button" id="see-more-speakers" type="button">MORE <img src="images/static/icons/more_icon.png"></button>
+      <p class="section-description"> iure nisi, saepe corrupti esse quaerat cumque unde laboriosam fuga accusamus. Quos quasi atque vitae reprehenderit nam, natus omnis culpa incidunt!</p>
+      <div class="past-container">
+        <a href="#" class="past-card">
+          <div class="past-card-details">
+            <h3>2014</h3>
+            <p>C4DAPT 2014 in Copenhagen</p>
+          </div>
+          <img src="images/static/c4dapt1_copenhagen.png" alt="C4DAPT Copenhagen">
+        </a>
+        <a href="#" class="past-card">
+          <div class="past-card-details">
+            <h3>2015</h3>
+            <p>C4DAPT2 2015 in Berlin</p>
+          </div>
+          <img src="images/static/c4dapt2_berlin.png" alt="C4DAPT Copenhagen">
+        </a>
+      </div>
     </div>
   </section>
   <section class="partners-section" id="Partners-section">
@@ -120,7 +114,6 @@
     </div>
   </footer>
 </body>
-<script src="js/main.js" type="module"></script>
 <script src="js/mobile_nav.js"></script>
 <script src="js/show_speakers.js"></script>
 <script src="js/add_speakers.js"></script>

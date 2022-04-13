@@ -10,8 +10,10 @@ header {
   width: 100%;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  -moz-backdrop-filter: blur(20px);
   opacity: 1;
-
   transition-property: margin, opacity;
   transition-duration: 0.1s, 0.2s;
   transition-timing-function: ease-out, ease-out;
@@ -30,6 +32,10 @@ header .close-button {
   justify-content: flex-end;
   flex-direction: row;
   background-color: #333333;
+}
+
+.close-button img:hover {
+  cursor: pointer;
 }
 
 header .social-media {
@@ -136,6 +142,10 @@ header .main-nav ul li a:hover {
   top: 1em;
 }
 
+.mobile-menu-button:hover {
+  cursor: pointer;
+}
+
 .mobile-menu-button img {
   width: 1.8em;
 }
@@ -200,7 +210,8 @@ header .main-nav ul li a:hover {
 }
 
 .section-title {
-  font-size: 1em;
+  text-align: center;
+  font-size: 1.3em;
 }
 
 .program-section .max-width-container .section-title {
@@ -445,7 +456,7 @@ footer .max-width-container p {
     background-color: white;
     opacity: 1;
   }
-  
+
   header .close-button {
     display: none;
   }
