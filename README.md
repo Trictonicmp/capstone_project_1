@@ -10,6 +10,12 @@
 - Frameworks: N/A
 - Technologies: LINTERS, GIT, GITHUB
 
+## Live preview
+
+[Here!](https://trictonicmp.github.io/capstone_project_1/)
+
+## Project Presentation
+[See video presentation here](https://drive.google.com/file/d/1vFFYocyRmEKqFk6gtovt1FWs391kq20k/view?usp=sharing)
 
 ## Getting Started
 
@@ -47,7 +53,7 @@ Feel free to check the [issues page](../../issues/).
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-
+- The awesome design of the webpage was made following [Cindy Shin](https://www.behance.net/adagio07) (Behance) design. Kudos for her!!
 - Hat tip to anyone whose code was used
 - Inspiration
 - etc
