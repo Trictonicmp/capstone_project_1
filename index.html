@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>C4D Advanced Production Techniques</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header id="header-nav" class="hidden-nav">
+    <div class="close-button" id="close-nav-btn"><img src="images/static/icons/close_mobile_menu.png" alt="close"></div>
+    <div class="social-media">
+      <div class="max-width-container">
+        <ul>
+          <li><a href="#"><img src="images/static/icons/facebook.png" alt="Facebook"></a></li>
+          <li><a href="#"><img src="images/static/icons/twitter.png" alt="Twitter"></a></li>
+          <li><a href="#">English</a></li>
+          <li><a href="#">My Page</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="main-nav max-width-container">
+      <a href="#" class="nav-logo">
+        <img src="images/static/logo.png" alt="C4D APT">
+      </a>
+      <nav>
+        <ul id="nav-list">
+          <li><a href="about.html" onclick="toggleNav()">About</a></li>
+          <li><a href="#Program-section" onclick="toggleNav()">Program</a></li>
+          <li><a href="#Featured-section" onclick="toggleNav()">Speakers</a></li>
+          <li><a href="#Partners-section" onclick="toggleNav()">Sponsor</a></li>
+          <li><a href="#" class="decorative-button" onclick="toggleNav()">CC Campaing</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div title="Open menu" class="mobile-menu-button" id="mobile-btn">
+    <img src="images/static/icons/mobile_menu.png" alt="menu">
+  </div>
+  <section class="hero-section" id="About-section">
+    <div class="max-width-container">
+      <h1 class="hero-title">
+        Now Available
+        <span>Cinema 4D Advanced Production Techniques 3</span>
+      </h1>
+      <p class="hero-description">
+        Take your Cinema4d skills to the next level with Cinema4d advanced production techniques from Simon Holmedal, Paul Everett, Raphael Rau, Simon Fiedler, Derya and Douwe.
+      </p>
+      <h2 class="hero-date">2022.12.10(SA) ~ 11(SU)</h2>
+      <p class="hero-location">@ Vimeo on demand</p>
+    </div>
+  </section>
+  <section class="program-section" id="Program-section">
+    <div class="max-width-container">
+      <h2 class="section-title">Main Program</h2>
+      <span class="title-line"></span>
+      <ul class="program-cards-container">
+        <li class="program-card">
+          <img src="images/static/icons/program_icon_01.png" alt="Lecture">
+          <h3>Welcome call</h3>
+          <p>See a preview of the projects and the guys behind all these masterpieces</p>
+        </li>
+        <li class="program-card">
+          <img src="images/static/icons/program_icon_02.png" alt="Lecture">
+          <h3>Presentations</h3>
+          <p>See how these great artists use their skills and teach you how to be an awesome C4D artist</p>
+        </li>
+        <li class="program-card">
+          <img src="images/static/icons/program_icon_03.png" alt="Lecture">
+          <h3>Forum</h3>
+          <p>Discuss during the presentations and recieve answers from your favorite artist</p>
+        </li>
+        <li class="program-card">
+          <img src="images/static/icons/program_icon_04.png" alt="Lecture">
+          <h3>Workshop</h3>
+          <p>Hands on!, Try yourself what you learned during the presentations and be amazed by yourself</p>
+        </li>
+        <li class="program-card">
+          <img src="images/static/icons/program_icon_05.png" alt="Lecture">
+          <h3>Plugins ready</h3>
+          <p>Get a free 30 days licence of your favorite plugins to try what you learned and get great deals</p>
+        </li>
+      </ul>
+      <a class="main-button" href="#" title="Join CC Global Summit 2015">Join CC Global Summit 2015</a>
+      <a class="whole-program-button" href="#" title="See the whole program">See the whole program</a>
+    </div>
+  </section>
+  <section class="featured-section" id="Featured-section">
+    <div class="max-width-container">
+      <h2 class="section-title">Featured Speakers</h2>
+      <span class="title-line"></span>
+      <ul class="speakers-cards-container speakers-hidden" id="speakers-container">
+      </ul>
+      <button class="see-more-button" id="see-more-speakers" type="button">MORE <img src="images/static/icons/more_icon.png" alt="˅"></button>
+    </div>
+  </section>
+  <section class="partners-section" id="Partners-section">
+    <div class="max-width-container">
+      <h3 class="section-title">Partner</h3>
+      <span class="title-line"></span>
+      <ul class="partner-container">
+        <li><a href="#"><img src="images/static/maxon.png" alt="Maxon"></a></li>
+        <li><a href="#"><img src="images/static/octane.png" alt="Octane"></a></li>
+        <li><a href="#"><img src="images/static/chaos.png" alt="Chaos Group"></a></li>
+        <li><a href="#"><img src="images/static/xparticles.png" alt="Xparticles"></a></li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <div class="max-width-container">
+      <img src="images/static/logo.png" alt="C4D APT">
+      <div>
+        <h5>2022 C4D Advanced Production Techniques <span>Some Rights Reserved.</span></h5>
+        <p>
+          Cinema4d Advanced Production Techniques gathers some of the best Cinema4D users in a conference room and have them show how they work, during a two day international seminar with guests from all over the world, sponsored by the biggest players in the industry.
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/mobile_nav.js"></script>
+  <script src="js/show_speakers.js"></script>
+  <script src="js/add_speakers.js"></script>
+</body>
+</html>
